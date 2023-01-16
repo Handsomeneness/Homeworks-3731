@@ -10,12 +10,12 @@ namespace FirstHomework
     {
         static void Main(string[] args)
         {
-            //WhoseGreater();
-            //Console.WriteLine();
-            //Maximum();
-            //Console.WriteLine();
-            //Remains();
-            //Console.WriteLine();
+            WhoseGreater();
+            Console.WriteLine();
+            Maximum();
+            Console.WriteLine();
+            Remains();
+            Console.WriteLine();
             RemainderAndEven();
         }
 
