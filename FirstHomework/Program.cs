@@ -14,7 +14,9 @@ namespace FirstHomework
             //Console.WriteLine();
             //Maximum();
             //Console.WriteLine();
-            Remains();
+            //Remains();
+            //Console.WriteLine();
+            RemainderAndEven();
         }
 
         public static void WhoseGreater()
@@ -27,6 +29,7 @@ namespace FirstHomework
 
             if (a > b)
                 Console.WriteLine($"Первое число: {a} больше второго: {b}");
+
             else
                 Console.WriteLine($"Второе число: {b} больше первого: {a}");
         }
@@ -59,10 +62,36 @@ namespace FirstHomework
 
             if (a % 2 > 0)
                 Console.WriteLine("Вы ввели нечётное число");
+
             else
                 Console.WriteLine("Вы ввели чётное число");
         }
 
+        public static void RemainderAndEven()
+        {
+            Console.WriteLine("Введите число");
+            double a = double.Parse(Console.ReadLine());
 
+            if (a % 2 == 0)
+            {
+                while (a > 0)
+                {
+                    Console.WriteLine(a);
+                    a -= 2;
+                }
+            }
+
+            else
+            {
+                double temp = a % 2;
+                a -= temp;
+
+                while (a > 0)
+                {
+                    Console.WriteLine(a);
+                    a -= 2;
+                }
+            }     
+        }
     }
 }
