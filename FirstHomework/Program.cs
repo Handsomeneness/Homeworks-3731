@@ -10,10 +10,11 @@ namespace FirstHomework
     {
         static void Main(string[] args)
         {
-            WhoseGreater();
-            Console.WriteLine();
-            Maximum();
-            Console.WriteLine();
+            //WhoseGreater();
+            //Console.WriteLine();
+            //Maximum();
+            //Console.WriteLine();
+            Remains();
         }
 
         public static void WhoseGreater()
@@ -29,7 +30,6 @@ namespace FirstHomework
             else
                 Console.WriteLine($"Второе число: {b} больше первого: {a}");
         }
-
 
         public static void Maximum()
         {
@@ -52,7 +52,16 @@ namespace FirstHomework
                 Console.WriteLine($"Третье число максимальное: {c}");
         }
 
-       
+       public static void Remains()
+        {
+            Console.WriteLine("Введите число");
+            double a = double.Parse(Console.ReadLine());
+
+            if (a % 2 > 0)
+                Console.WriteLine("Вы ввели нечётное число");
+            else
+                Console.WriteLine("Вы ввели чётное число");
+        }
 
 
     }
