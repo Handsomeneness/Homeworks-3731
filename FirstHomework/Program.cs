@@ -10,6 +10,7 @@ namespace FirstHomework
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World");
         }
     }
 }
